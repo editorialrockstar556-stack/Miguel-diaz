@@ -1,0 +1,154 @@
+/* ===============================
+   Lopson.in — MLBB Diamonds Store
+   styles.css
+   Author: Coco Bird
+   =============================== */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body and global styling */
+body {
+  background: radial-gradient(circle at top left, #1a001a, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Neon pink glow text */
+.neon-text {
+  color: #ff4de3;
+  text-shadow: 0 0 5px #ff4de3, 0 0 15px #ff4de3, 0 0 30px #ff4de3;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #ff4de3;
+  box-shadow: 0 0 20px #ff4de3;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  animation: neonPulse 2s infinite alternate;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+/* Product section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem 5%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff4de3;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 77, 227, 0.5);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(255, 77, 227, 0.9);
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #ff9be7;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+button, .buy-btn {
+  background: #ff4de3;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover, .buy-btn:hover {
+  background: #ff86e7;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4de3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #ff4de3;
+  box-shadow: 0 -5px 20px #ff4de3;
+}
+
+footer p {
+  color: #ff9be7;
+}
+
+/* Animations */
+@keyframes neonPulse {
+  from {
+    text-shadow: 0 0 5px #ff4de3, 0 0 10px #ff4de3, 0 0 20px #ff4de3;
+  }
+  to {
+    text-shadow: 0 0 10px #ff9be7, 0 0 30px #ff4de3, 0 0 60px #ff4de3;
+  }
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
