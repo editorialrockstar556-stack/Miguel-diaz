@@ -1,0 +1,39 @@
+
+---
+
+## 🚀 How to Deploy
+
+1. **Fork or clone** this repository  
+2. Go to **Settings → Pages**  
+3. Under “Source”, choose `main` branch and root folder  
+4. Save — your website will be live at:  
+   👉 `https://<your-username>.github.io/<repo-name>/`
+
+---
+
+## 💡 Customization Tips
+
+- Update your store name or logo in `index.html`  
+- Change diamond prices or add categories easily  
+- Modify colors and effects in `style.css`  
+- Add more interactivity or animations in `script.js`  
+
+---
+
+## ⚙️ Technologies Used
+
+- 🖥️ HTML5  
+- 🎨 CSS3 (with neon glow effects)  
+- ⚙️ JavaScript (Vanilla JS animations)  
+- ☁️ GitHub Pages for hosting  
+
+---
+
+## 🧾 License & Copyright
+
+© 2025 **Lopson.in** — All Rights Reserved.  
+Developed by [**Coco Bird**](#) with 💖 for MLBB fans everywhere.  
+
+---
+
+> _“Shine bright like a diamond — even in the Land of Dawn.”_
