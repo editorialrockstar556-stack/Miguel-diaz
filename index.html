@@ -1,0 +1,83 @@
+<!--
+Lopson.in - MLBB Diamonds Store
+Single-file website (index.html) with embedded CSS and JS.
+Instructions:
+1. Save this file as `index.html` and push to your GitHub repository.
+2. To publish with GitHub Pages: in repo settings select the branch (e.g., main) and root folder.
+3. The "Buy" buttons open WhatsApp with a prefilled message to +91 9954151225.
+
+
+You may customize item names/prices/categories in the HTML below.
+-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lopson.in — MLBB Diamonds Store</title>
+<meta name="description" content="Lopson.in — Buy Mobile Legends: Bang Bang diamonds. Fast delivery via WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ff5bb5'/%3E%3Ctext x='50' y='58' font-size='36' text-anchor='middle' font-family='Arial' fill='%23fff'%3EL%3C/text%3E%3C/svg%3E">
+
+
+<style>
+:root{
+--bg1:#1b0b12;
+--neon-pink:#ff5bb5;
+--neon-purple:#9b5bff;
+--glass: rgba(255,255,255,0.04);
+--glass-2: rgba(255,255,255,0.06);
+--accent: #fff;
+--card-radius: 18px;
+--max-width: 1100px;
+--glass-border: rgba(255,255,255,0.06);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:var(--accent);
+-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--bg1);}
+
+
+/* Animated neon gradient background */
+.bg-wrap{position:fixed;inset:0;overflow:hidden;z-index:-2}
+.gradient{
+position:absolute;inset:-20%;background:radial-gradient(circle at 20% 20%, rgba(255,91,181,0.18), transparent 8%),
+radial-gradient(circle at 80% 70%, rgba(155,91,255,0.14), transparent 12%);
+filter: blur(40px);
+animation: floatBG 12s ease-in-out infinite;
+transform: translateZ(0);
+}
+.blob{position:absolute;border-radius:50%;mix-blend-mode:screen;opacity:0.9;filter:blur(30px)}
+.blob.pink{width:520px;height:520px;background:linear-gradient(135deg,var(--neon-pink),#ff8ad1);left:-10%;top:-5%;animation: drift 18s ease-in-out infinite}
+.blob.purple{width:420px;height:420px;background:linear-gradient(135deg,var(--neon-purple),#c38bff);right:-8%;bottom:-10%;animation: drift 22s ease-in-out infinite}
+
+
+@keyframes floatBG{0%{transform:translateY(-8vh)}50%{transform:translateY(6vh)}100%{transform:translateY(-8vh)}}
+@keyframes drift{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(30px) translateX(30px)}100%{transform:translateY(0) translateX(0)}}
+
+
+/* Page container */
+.wrap{max-width:var(--max-width);margin:48px auto;padding:28px;}
+
+
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--neon-pink),var(--neon-purple));display:grid;place-items:center;box-shadow:0 6px 30px rgba(255,91,181,0.14);font-weight:700;font-size:20px}
+.site-title{font-size:20px;font-weight:700;letter-spacing:0.6px}
+.site-sub{font-size:12px;color:rgba(255,255,255,0.7)}
+nav{display:flex;gap:12px;align-items:center}
+.btn{background:linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));padding:10px 14px;border-radius:12px;border:1px solid var(--glass-border);cursor:pointer;text-decoration:none;color:var(--accent);font-weight:600}
+
+
+/* Hero */
+.hero{margin-top:22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:20px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:24px;align-items:center}
+.hero-left{flex:1}
+.hero-right{width:320px}
+.hero h1{margin:0;font-size:34px;line-height:1.02}
+.hero p{margin:10px 0 0;color:rgba(255,255,255,0.78)}
+
+
+/* categories and product grid */
+.controls{display:flex;gap:10px;margin:22px 0}
+.category{padding:8px 12px;border-radius:999px;border:1px solid transparent;background:transparent;cursor:pointer}
+</html>
